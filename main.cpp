@@ -9,8 +9,7 @@
 Plugin plugin;
 EXPOSE_SINGLE_INTERFACE_GLOBALVAR(Plugin, IServerPluginCallbacks, INTERFACEVERSION_ISERVERPLUGINCALLBACKS, plugin);
 
-Plugin::Plugin()
-{}
+Plugin::Plugin() {}
 
 bool Plugin::Load(CreateInterfaceFn interfaceFactory, CreateInterfaceFn gameServerFactory) {
 	console = new Console();
