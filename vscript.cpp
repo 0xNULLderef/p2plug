@@ -12,7 +12,6 @@ DETOUR_T(IScriptVM*, VScript::CreateVM, ScriptLanguage_t language) {
 	IScriptVM* g_pScriptVM = VScript::CreateVM(thisptr, language);
 	vscript->g_pScriptVM = g_pScriptVM;
 	ScriptRegisterFunction(g_pScriptVM, printHelloWorld, "Prints hello world to console.");
-	// console->Print("%s", g_pScriptVM->GetLanguageName());
 	return g_pScriptVM;
 }
 
